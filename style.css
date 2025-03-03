@@ -7,16 +7,15 @@ body {
 }
 
 main{
-    margin-top: 3%;
-    margin-left: 6%;
+    margin: 1% 0 0 6%;
 }
 
 nav {
-    align-items: center;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 0.8rem;
     background-color: #fa8d2e;
-    justify-content: space-between;
 }
 
 .logo {
@@ -45,20 +44,129 @@ ul {
     list-style: none; 
     gap: 70px;
     padding-right: 1.5%;
- }
+}
 
- a {
+li:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+    cursor: pointer;
+}
+
+a {
     text-decoration:none;
     color: white;
     font-size: 28px;
- }
+}
 
- #cerrarsesion { /*IMPORTANTE*/
-    border: 1px solid #ffffff;
-    border-radius: 7%;
-    border-width: 3px;
- }
+#cerrarsesion { 
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 7px 15px 7px 15px;
+}
 
- hr{
+#cerrarsesion:hover { 
+    background-color: #ffffff; 
+    color: #fa8d2e;           
+    cursor: pointer; 
+}
+
+hr{
     margin-right: 6%;
- }
+}
+
+#contenido{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+#seccionimagen{
+    margin: 30px 0 30px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#imagepreview{
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+.file-input{
+    display: flex;
+    justify-content: center; /* Centra solo el botón */
+    width: 300px;
+}
+
+input[type="file"] {
+    display: none; /* Oculta el input nativo */
+}
+
+.file-label {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 8px 8px 8px 8px;
+    cursor: pointer;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+#formulariodatos{
+    margin: 0px 90px 10px 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+input{
+    width: 300px;  /* Ancho del campo */
+    height: 30px;  /* Altura del campo */
+    padding: 10px; /* Espaciado interno para que no se vea tan apretado */
+    font-size: 18px; /* Tamaño del texto dentro del input */
+    border: 2px solid #ccc; /* Borde opcional */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 6%;
+}
+
+#cancelar{
+    margin: 20px 10px 0 0;
+    font-family: 'Lusitana', sans-serif;
+    font-size: 28px;
+    border: 5px solid #fa8d2e;
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 7px 15px 7px 15px;
+}
+
+#cancelar:hover {
+    background-color: #fa8d2e; 
+    color: #ffffff;          
+    cursor: pointer;          
+}
+
+
+#confirmar{
+    margin: 20px 0 0 10px;
+    font-family: 'Lusitana', sans-serif;
+    font-size: 28px;
+    border: 5px solid #fa8d2e;
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 7px 15px 7px 15px;
+}
+
+#confirmar:hover {
+    background-color: #fa8d2e; 
+    color: #ffffff;           
+    cursor: pointer;          
+}

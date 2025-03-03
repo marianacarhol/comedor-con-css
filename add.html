@@ -15,7 +15,7 @@
                     <li><a href="#">Dashboard</a></li>
                     <li><a href="#">Inventario</a></li>
                     <li><a href="#">Configuración</a></li>
-                    <li id="cerrarsesion"><a href="#"><img src=""></a></li>
+                    <li><a id="cerrarsesion" href="#">Cerrar sesión</a></li>
                 </ul>
             </nav>
         </header>
@@ -27,57 +27,41 @@
 
             <hr>
 
-            <div> <!-- seccion entera -->
-                <div> <!-- seccion de imagen-seleccionar archivo -->
-                    <div> <!-- seccion de la imagen -->
-                        <img src="imagen.png" alt="imagen"> 
+            <div id="contenido"> <!-- seccion entera -->
+                <div id="seccionimagen"> <!-- seccion de imagen-seleccionar archivo -->
+                    <div id="imagepreview"> <!-- seccion de la imagen -->
                     </div>
-                    <div> <!-- seccion de seleccionar archivo -->
-                        <div> <!-- seleccione archivo -->
-                            <input type="file" id="fileInput" accept="image/*">
-                        </div>
+                     <!-- seccion de seleccionar archivo -->
+                    <div class="file-input"> <!-- seleccione archivo -->
+                        <label for="fileInput" class="file-label">Seleccionar imagen</label>
+                        <input type="file" id="fileInput" accept="image/*">
+                    </div>
                         <!-- <div> 
                             <button> Buscar </button>
                         </div> -->
-                    </div>
                 </div>
-                <div> <!-- seccion de datos -->
-                    <div> <!-- seccion ID -->
-                        <div> <!-- ID -->
-                            <h2> ID </h2>
+                <form id="productoForm">
+                    <div id="formulariodatos">
+                        <div>
+                            <label for="idProducto"><h2>ID</h2></label>
+                            <input type="text" id="idProducto" class="entrada" required>
                         </div>
-                        <div> <!-- input ID -->
-                            <input type="text" name="" class="entrada">
+                        <div>
+                            <label for="nombreProducto"><h2>Nombre</h2></label>
+                            <input type="text" id="nombreProducto" class="entrada" required>
+                        </div>
+                        <div>
+                            <label for="cantidadProducto"><h2>Cantidad</h2></label>
+                            <input type="number" id="cantidadProducto" class="entrada" min="1" required>
                         </div>
                     </div>
-
-                    <div> <!-- seccion Nombre -->
-                        <div>
-                            <h2> Nombre </h2>
-                        </div>
-                        <div>
-                            <input type="text" name="" class="entrada">
-                        </div>
-                    </div>
-                    
-                    <div> <!-- seccion Cantidad -->
-                        <div>
-                            <h2> Cantidad </h2>
-                        </div>
-                        <div>
-                            <input type="text" name="" class="entrada">
-                        </div>
-                    </div>
-                </div>
+                </form>
             </div>
+            <hr>
         </main>
         <footer>
-            <div>
-              <button> Cancelar </button>  
-            </div>
-            <div>
-                <button> Confirmar </button>
-            </div>
+            <button type="button" id="cancelar">Cancelar</button>
+            <button type="submit" id="confirmar" form="productoForm">Confirmar</button>
         </footer>
     </body>
 </html>
