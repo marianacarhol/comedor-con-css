@@ -97,12 +97,12 @@ hr{
 
 .file-input{
     display: flex;
-    justify-content: center; /* Centra solo el botón */
+    justify-content: center; 
     width: 300px;
 }
 
 input[type="file"] {
-    display: none; /* Oculta el input nativo */
+    display: none;
 }
 
 .file-label {
@@ -124,12 +124,12 @@ input[type="file"] {
 }
 
 input[type="text"], input[type="number"]{
-    width: 300px;  /* Ancho del campo */
-    height: 30px;  /* Altura del campo */
-    padding: 10px; /* Espaciado interno para que no se vea tan apretado */
-    font-size: 18px; /* Tamaño del texto dentro del input */
-    border: 2px solid #ccc; /* Borde opcional */
-    border-radius: 5px; /* Bordes redondeados */
+    width: 300px;  
+    height: 30px;  
+    padding: 10px; 
+    font-size: 18px; 
+    border: 2px solid #ccc; 
+    border-radius: 5px;
 }
 
 footer{
