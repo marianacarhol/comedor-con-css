@@ -123,7 +123,7 @@ input[type="file"] {
     font-size: 18px;
 }
 
-input{
+input[type="text"], input[type="number"]{
     width: 300px;  /* Ancho del campo */
     height: 30px;  /* Altura del campo */
     padding: 10px; /* Espaciado interno para que no se vea tan apretado */
@@ -169,4 +169,54 @@ footer{
     background-color: #fa8d2e; 
     color: #ffffff;           
     cursor: pointer;          
+}
+
+
+@media (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        margin: 2% 4%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 0.5rem;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    #imagepreview {
+        width: 90%;
+    }
+
+    #formulariodatos {
+        max-width: 90%;
+    }
 }
