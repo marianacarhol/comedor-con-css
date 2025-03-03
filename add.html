@@ -3,26 +3,29 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>Corazon contento</title>
+        <title>Corazón contento</title>
         <link href="minimal-table.css" rel="stylesheet" type="text/css">
+        <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <header>
             <nav>
-                <div class="logo">Corazon contento</div>
+                <div class="logo"><strong>Corazón contento</strong></div>
                 <ul>
                     <li><a href="#">Dashboard</a></li>
-                    <li><a href="#"> Inventario </a></li>
-                    <li><a href="#"> Configuración </a></li>
-                    <li><a href="#"> Cerrar sesión </a></li>
+                    <li><a href="#">Inventario</a></li>
+                    <li><a href="#">Configuración</a></li>
+                    <li id="cerrarsesion"><a href="#"><img src=""></a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
             <div>
-                <h1>Nuevo Producto</h1>
+                <h1 class="titulo">Nuevo Producto</h1>
             </div>
+
+            <hr>
 
             <div> <!-- seccion entera -->
                 <div> <!-- seccion de imagen-seleccionar archivo -->
@@ -31,11 +34,11 @@
                     </div>
                     <div> <!-- seccion de seleccionar archivo -->
                         <div> <!-- seleccione archivo -->
-                            <p> Seleccionar Archivo... </p>
+                            <input type="file" id="fileInput" accept="image/*">
                         </div>
-                        <div> <!-- buscar -->
+                        <!-- <div> 
                             <button> Buscar </button>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div> <!-- seccion de datos -->
